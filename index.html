@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Autoscuola Santa Viola Bologna | Patenti, Rinnovi e Duplicati</title>
+<meta name="description" content="Autoscuola Santa Viola a Bologna: patenti auto e moto, rinnovi, duplicati e pratiche. Due sedi: Via Emilia Ponente 100 (051 384785) e Via Saragozza 115/B (051 644 6710).">
+<meta name="robots" content="noindex, nofollow"><!-- mockup: togliere alla messa online -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:title" content="Autoscuola Santa Viola Bologna">
+<meta property="og:description" content="Patenti auto e moto, rinnovi, duplicati e pratiche in due sedi a Bologna. Aperti anche il sabato mattina.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%236a2fb0'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='28' font-weight='700' text-anchor='middle' fill='%23f6f1fb'%3ESV%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"LocalBusiness","name":"Autoscuola Santa Viola","telephone":"+39051384785","email":"info@autoscuolasantaviola.com","address":{"@type":"PostalAddress","streetAddress":"Via Emilia Ponente 100","postalCode":"40133","addressLocality":"Bologna","addressCountry":"IT"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"12:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"14:30","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"12:30"}]},
+{"@type":"LocalBusiness","name":"Autoscuola Santa Viola 2","telephone":"+390516446710","email":"info@autoscuolasantaviola.com","address":{"@type":"PostalAddress","streetAddress":"Via Saragozza 115/B","postalCode":"40123","addressLocality":"Bologna","addressCountry":"IT"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:30","closes":"12:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"14:30","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:30","closes":"12:30"}]}
+]}
+</script>
+<style>
+:root{
+  color-scheme:light;
+  /* colori: carta, superficie, inchiostro, un solo accento (prugna) */
+  --paper:oklch(0.968 0.008 305);
+  --surface:oklch(0.992 0.004 305);
+  --ink:oklch(0.22 0.025 305);
+  --muted:oklch(0.46 0.025 305);
+  --line:oklch(0.89 0.012 305);
+  --accent:oklch(0.45 0.19 303);
+  --accent-hover:oklch(0.38 0.18 303);
+  --accent-ink:oklch(0.985 0.01 305);
+  --accent-soft:oklch(0.93 0.035 305);
+  --err:oklch(0.5 0.18 27);
+  /* font: stack di sistema (woff2 self-hosted non presenti nella cartella) */
+  --font:"Segoe UI Variable Text","Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+  --font-display:"Segoe UI Variable Display","Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+  /* scala tipografica 1.25 */
+  --t0:1rem;--t1:1.25rem;--t2:1.5625rem;--t3:1.953rem;--t4:2.441rem;--t5:3.052rem;
+  /* spazi a multipli di 8 */
+  --s1:8px;--s2:16px;--s3:24px;--s4:32px;--s5:48px;--s6:64px;--s7:96px;
+  --r:16px;
+  --ease:cubic-bezier(0.16,1,0.3,1);
+  --max:1160px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:96px;overflow-x:clip}
+body{font:400 var(--t0)/1.6 var(--font);color:var(--ink);background:var(--paper);overflow-x:clip;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img,svg{max-width:100%}
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--s3)}
+.skip{position:absolute;left:var(--s2);top:-100px;background:var(--accent);color:var(--accent-ink);padding:var(--s1) var(--s2);border-radius:var(--r);z-index:100}
+.skip:focus{top:var(--s1)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.ico{width:1.2em;height:1.2em;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.ico.fill{fill:currentColor;stroke:none}
+
+h1,h2,h3{font-family:var(--font-display);line-height:1.1;letter-spacing:-.025em;font-weight:800;text-wrap:balance}
+h1{font-size:clamp(var(--t4),6vw,4.25rem);line-height:1.04}
+h2{font-size:clamp(var(--t3),4vw,var(--t5))}
+h3{font-size:var(--t1)}
+.sub{color:var(--muted);font-size:var(--t1);line-height:1.5;max-width:36em;text-wrap:pretty}
+section{padding-block:var(--s7)}
+.head{margin-bottom:var(--s5)}
+.head .sub{margin-top:var(--s2)}
+
+/* pulsanti */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--s1);min-height:48px;padding:0 var(--s3);border-radius:999px;border:2px solid transparent;font:700 var(--t0)/1.2 var(--font);text-decoration:none;cursor:pointer;transition:background-color .2s var(--ease),border-color .2s var(--ease),transform .2s var(--ease)}
+.btn:hover{transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.btn-main{background:var(--accent);color:var(--accent-ink)}.btn-main:hover{background:var(--accent-hover)}
+.btn-out{background:transparent;color:var(--accent);border-color:var(--accent)}.btn-out:hover{background:var(--accent-soft)}
+.btn-sm{min-height:44px;padding:0 var(--s2);font-size:.9375rem}
+.link{color:var(--accent);font-weight:700;text-underline-offset:4px;display:inline-flex;align-items:center;min-height:44px}
+
+/* barra annuncio + header */
+.ann{background:var(--ink);color:var(--paper);font-size:.9375rem;text-align:center;padding:var(--s1) var(--s2)}
+.ann a{color:var(--accent-soft);font-weight:700;margin-left:var(--s1);text-underline-offset:3px}
+header.top{position:sticky;top:0;z-index:30;background:var(--surface);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:var(--s3);min-height:76px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;line-height:1.05}
+.logo b{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-size:var(--t0);font-weight:800}
+.logo span{font:800 1.1875rem/1.05 var(--font-display);letter-spacing:-.01em}
+.logo small{display:block;margin-top:3px;font:700 .6875rem/1 var(--font);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+nav{display:flex;gap:var(--s4);font-weight:600}
+nav a{text-decoration:none;display:inline-flex;align-items:center;min-height:44px}nav a:hover{color:var(--accent)}
+.bar-cta{display:flex;gap:var(--s1)}
+
+/* hero */
+.hero{padding-block:var(--s6) var(--s7)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:var(--s6);align-items:center}
+.hero h1{margin-bottom:var(--s3)}
+.hero .sub{margin-bottom:var(--s4)}
+.cta-row{display:flex;flex-wrap:wrap;gap:var(--s2);align-items:center}
+.slot{display:grid;place-items:center;text-align:center;border:2px dashed var(--line);border-radius:var(--r);background:var(--surface);color:var(--muted);font-size:.9375rem;padding:var(--s3);aspect-ratio:5/4}
+.sedi-call{display:grid;gap:var(--s1);margin-top:var(--s2)}
+.call{display:flex;align-items:center;justify-content:space-between;gap:var(--s2);min-height:64px;padding:var(--s1) var(--s3);border:1px solid var(--line);background:var(--surface);border-radius:var(--r);text-decoration:none;transition:border-color .2s var(--ease)}
+.call:hover{border-color:var(--accent)}
+.call strong{display:block;line-height:1.3}.call small{color:var(--muted);font-size:.875rem}
+.call em{font-style:normal;font-weight:700;color:var(--accent);display:flex;align-items:center;gap:var(--s1);white-space:nowrap}
+
+/* servizi: elenco a righe */
+.rows{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr) auto;gap:var(--s3);align-items:center;padding-block:var(--s3);border-bottom:1px solid var(--line)}
+.row h3{font-size:var(--t2)}
+.row p{color:var(--muted)}
+.chip{display:inline-block;margin-top:var(--s1);background:var(--accent-soft);color:var(--accent);font-weight:700;font-size:.875rem;border-radius:999px;padding:2px 12px}
+
+/* rinnovo */
+.band{background:var(--accent-soft);border-radius:var(--r);padding:var(--s6);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--s6);align-items:center}
+.price{display:flex;align-items:baseline;flex-wrap:wrap;gap:var(--s1) var(--s2);margin-block:var(--s3) var(--s2)}
+.price b{font:800 4.5rem/1 var(--font-display);letter-spacing:-.04em;color:var(--accent)}
+.price span{color:var(--muted);font-weight:600}
+.band .sub{margin-bottom:var(--s4)}
+.steps{list-style:none;display:grid;gap:var(--s2);counter-reset:s}
+.steps li{counter-increment:s;display:flex;gap:var(--s2);background:var(--surface);border-radius:var(--r);padding:var(--s3)}
+.steps li::before{content:counter(s);flex:none;width:36px;height:36px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-weight:800}
+.steps strong{display:block;margin-bottom:2px}
+.steps span{color:var(--muted);font-size:.9375rem}
+
+/* recensioni */
+.rev-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:var(--s3);margin-bottom:var(--s4)}
+.score{display:grid;gap:4px;margin-top:var(--s2);color:var(--muted)}
+.score b{color:var(--ink)}
+.arrows{display:flex;gap:var(--s1)}
+.arrows button{width:48px;height:48px;border-radius:50%;border:2px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer;display:grid;place-items:center;transition:background-color .2s var(--ease)}
+.arrows button:hover{background:var(--accent-soft)}
+.track{display:flex;gap:var(--s3);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:var(--s2);scrollbar-width:thin}
+blockquote{flex:0 0 calc((100% - 2 * var(--s3)) / 3);scroll-snap-align:start;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:var(--s4);display:flex;flex-direction:column;gap:var(--s2)}
+blockquote p{line-height:1.65;text-wrap:pretty}
+blockquote footer{margin-top:auto;display:flex;align-items:center;gap:12px}
+blockquote footer i{width:40px;height:40px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-style:normal;font-weight:800}
+blockquote footer small{display:block;color:var(--muted);font-size:.875rem;line-height:1.3}
+.stars{display:flex;gap:2px;color:var(--accent)}
+.stars .ico{width:1.1em;height:1.1em}
+.rev-note{margin-top:var(--s2);color:var(--muted);font-size:.9375rem}
+
+/* sedi */
+.sedi{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--s3)}
+.sede{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:var(--s4);display:flex;flex-direction:column;gap:var(--s2)}
+.sede .cap{color:var(--muted);margin-top:-8px}
+dl.hours{display:grid;grid-template-columns:auto 1fr;gap:var(--s1) var(--s3);background:var(--paper);padding:var(--s2) var(--s3);border-radius:var(--r);font-size:.9375rem}
+dl.hours dt{color:var(--muted)}dl.hours dd{font-weight:600;text-align:right}
+.sede .actions{display:flex;flex-wrap:wrap;gap:var(--s1);margin-top:auto}
+
+/* documenti */
+.docs{display:grid;gap:var(--s1);max-width:760px}
+details{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding-inline:var(--s3)}
+summary{cursor:pointer;font-weight:700;min-height:56px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:var(--s2)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:var(--t2);color:var(--accent);line-height:1}
+details[open] summary::after{content:"\2212"}
+details ul{padding:0 0 var(--s2) var(--s3);color:var(--muted);display:grid;gap:4px}
+details p.t{padding:0 0 var(--s2);color:var(--muted);font-size:.9375rem}
+
+/* contatti */
+.form-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:var(--s6);align-items:start}
+.direct{list-style:none;display:grid;gap:var(--s2);margin-top:var(--s4)}
+.direct a{display:flex;align-items:center;gap:12px;min-height:44px;text-decoration:none;font-weight:600}
+.direct a:hover{color:var(--accent)}
+.direct .ico{color:var(--accent);width:1.4em;height:1.4em}
+form{display:grid;gap:var(--s2);background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:var(--s4)}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--s2)}
+label{display:grid;gap:6px;font-size:.9375rem;font-weight:700}
+input,select,textarea{font:inherit;font-weight:400;color:var(--ink);min-height:48px;padding:12px var(--s2);border:1px solid var(--line);border-radius:var(--r);background:var(--paper);width:100%}
+textarea{min-height:96px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:3px solid var(--accent);outline-offset:1px;border-color:var(--accent);background:var(--surface)}
+input[aria-invalid="true"]{border-color:var(--err)}
+.err{color:var(--err);font-size:.9375rem;font-weight:600}
+
+/* footer */
+footer.site{border-top:1px solid var(--line);padding-block:var(--s6);color:var(--muted);font-size:.9375rem}
+.foot{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:var(--s4)}
+.foot h2{font:700 1rem/1.3 var(--font);letter-spacing:0;color:var(--ink);margin-bottom:var(--s1)}
+.foot a{display:block;text-decoration:none;padding-block:10px}.foot a:hover{color:var(--accent)}
+.legal{margin-top:var(--s4);padding-top:var(--s3);border-top:1px solid var(--line);font-size:.875rem}
+
+.mbar{display:none}
+
+@media (max-width:1000px){
+  nav{display:none}
+  .hero-grid,.band,.form-grid{grid-template-columns:minmax(0,1fr);gap:var(--s5)}
+  .band{padding:var(--s5) var(--s4)}
+  .row{grid-template-columns:minmax(0,1fr) auto}
+  .row p{grid-column:1/-1;order:3}
+  blockquote{flex-basis:calc((100% - var(--s3)) / 2)}
+  .foot{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+}
+@media (max-width:640px){
+  section{padding-block:var(--s6)}
+  .hero{padding-block:var(--s4) var(--s6)}
+  .bar{min-height:68px}
+  .bar-cta .btn-out{display:none}
+  .bar-cta .btn-main span{display:none}
+  .bar-cta .btn-main{width:48px;padding:0}
+  .cta-row .btn{flex:1 1 100%}
+  .sedi,.two,.foot{grid-template-columns:minmax(0,1fr)}
+  .row{grid-template-columns:minmax(0,1fr)}
+  .row .btn{justify-self:start}
+  blockquote{flex-basis:86%}
+  .arrows{display:none}
+  .price b{font-size:3.5rem}
+  .mbar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s1);position:fixed;inset:auto 0 0 0;z-index:40;background:var(--surface);border-top:1px solid var(--line);padding:var(--s1) var(--s2) calc(var(--s1) + env(safe-area-inset-bottom,0px))}
+  .mbar .btn{padding:0 var(--s1);font-size:.9375rem}
+  body{padding-bottom:72px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.call,.arrows button{transition:none}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Vai al contenuto</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9l-5.05.9"/><path d="M9 10a.5.5 0 0 0 1 0v-1a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5-2.5l5 2v4a2 2 0 0 1-2 2a16 16 0 0 1-15-15a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6l9-6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0-6 0"/><path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1-2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 17.75l-6.172 3.245l1.179-6.873l-5-4.867l6.9-1l3.086-6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 6l-6 6l6 6"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 6l6 6l-6 6"/></symbol>
+</svg>
+
+<div class="ann">Aperti anche il sabato mattina. Rinnovo patente a 110€ tutto incluso. <a href="#rinnovo">Come funziona</a></div>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="Autoscuola Santa Viola, inizio pagina">
+      <b>SV</b>
+      <span>Autoscuola<small>Santa Viola, Bologna</small></span>
+    </a>
+    <nav aria-label="Principale">
+      <a href="#servizi">Servizi</a>
+      <a href="#rinnovo">Rinnovo patente</a>
+      <a href="#recensioni">Recensioni</a>
+      <a href="#sedi">Sedi e orari</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <div class="bar-cta">
+      <a class="btn btn-out btn-sm" href="tel:051384785"><svg class="ico"><use href="#i-phone"/></svg>Chiama</a>
+      <a class="btn btn-main btn-sm" href="https://wa.me/39051384785" data-wa="Ciao Autoscuola Santa Viola! Vi scrivo dal sito web." target="_blank" rel="noopener" aria-label="Scrivici su WhatsApp"><svg class="ico"><use href="#i-wa"/></svg><span>Scrivici su WhatsApp</span></a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Con noi sei in buone mani.</h1>
+      <p class="sub">Due sedi a Bologna per patenti auto e moto, rinnovi, duplicati e pratiche. Scrivici, chiamaci o passa da noi, anche il sabato mattina.</p>
+      <div class="cta-row">
+        <a class="btn btn-main" href="https://wa.me/39051384785" data-wa="Ciao Autoscuola Santa Viola! Vorrei informazioni." target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg>Scrivici su WhatsApp</a>
+        <a class="btn btn-out" href="tel:051384785"><svg class="ico"><use href="#i-phone"/></svg>Chiama</a>
+        <a class="link" href="mailto:info@autoscuolasantaviola.com?subject=Richiesta%20informazioni%20dal%20sito">Scrivi un'email</a>
+      </div>
+    </div>
+    <div>
+      <div class="slot" role="img" aria-label="Spazio per una foto reale del team o della sede">[FOTO TEAM O SEDE QUI]</div>
+      <div class="sedi-call">
+        <a class="call" href="tel:051384785">
+          <span><strong>Santa Viola</strong><small>Via Emilia Ponente, 100</small></span>
+          <em><svg class="ico"><use href="#i-phone"/></svg>051 384785</em>
+        </a>
+        <a class="call" href="tel:0516446710">
+          <span><strong>Saragozza</strong><small>Via Saragozza, 115/B</small></span>
+          <em><svg class="ico"><use href="#i-phone"/></svg>051 644 6710</em>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servizi" style="background:var(--surface)">
+  <div class="wrap">
+    <div class="head">
+      <h2>Di cosa hai bisogno?</h2>
+      <p class="sub">Dalla prima patente alle pratiche per chi la patente ce l'ha già.</p>
+    </div>
+    <div class="rows">
+      <article class="row">
+        <div><h3>Rinnovo patente</h3><span class="chip">110€ tutto incluso</span></div>
+        <p>Visita medica e pratiche in un unico prezzo, con prenotazione direttamente in autoscuola.</p>
+        <a class="btn btn-out btn-sm" href="https://wa.me/39051384785" data-wa="Ciao Autoscuola Santa Viola! Vorrei prenotare il rinnovo patente." target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg>Scrivici su WhatsApp</a>
+      </article>
+      <article class="row">
+        <h3>Duplicato patente</h3>
+        <p>Patente smarrita, rubata o rovinata: ci pensiamo noi alla pratica.</p>
+        <a class="btn btn-out btn-sm" href="https://wa.me/39051384785" data-wa="Ciao Autoscuola Santa Viola! Avrei bisogno di un duplicato patente." target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg>Scrivici su WhatsApp</a>
+      </article>
+      <article class="row">
+        <h3>Patente B</h3>
+        <p>Lezioni di teoria in sede e guide pratiche con i nostri istruttori.</p>
+        <a class="btn btn-out btn-sm" href="https://wa.me/39051384785" data-wa="Ciao Autoscuola Santa Viola! Vorrei informazioni per la patente B." target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg>Scrivici su WhatsApp</a>
+      </article>
+      <article class="row">
+        <h3>Patenti moto</h3>
+        <p>Patenti moto A: dalla teoria all'esame. Chiedici le categorie disponibili.</p>
+        <a class="btn btn-out btn-sm" href="https://wa.me/39051384785" data-wa="Ciao Autoscuola Santa Viola! Vorrei informazioni per la patente moto." target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg>Scrivici su WhatsApp</a>
+      </article>
+      <article class="row">
+        <h3>Revisione e patenti professionali</h3>
+        <p>Revisione patente, permesso provvisorio di guida e patenti C, D, E e CAP.</p>
+        <a class="btn btn-out btn-sm" href="https://wa.me/39051384785" data-wa="Ciao Autoscuola Santa Viola! Avrei bisogno di informazioni su revisione patente o patenti professionali." target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg>Scrivici su WhatsApp</a>
+      </article>
+      <article class="row">
+        <h3>Recupero punti</h3>
+        <p>Corsi per recuperare i punti decurtati dalla patente.</p>
+        <a class="btn btn-out btn-sm" href="https://wa.me/39051384785" data-wa="Ciao Autoscuola Santa Viola! Vorrei informazioni sul corso recupero punti." target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg>Scrivici su WhatsApp</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="rinnovo">
+  <div class="wrap">
+    <div class="band">
+      <div>
+        <h2>Rinnovo patente, un prezzo tutto compreso.</h2>
+        <div class="price"><b>110€</b><span>visita medica e pratiche incluse</span></div>
+        <p class="sub">Prenoti da noi per telefono, WhatsApp o email.</p>
+        <div class="cta-row">
+          <a class="btn btn-main" href="https://wa.me/39051384785" data-wa="Ciao Autoscuola Santa Viola! Vorrei prenotare il rinnovo patente." target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg>Prenota il rinnovo</a>
+          <a class="btn btn-out" href="tel:051384785"><svg class="ico"><use href="#i-phone"/></svg>051 384785</a>
+        </div>
+      </div>
+      <ol class="steps">
+        <li><div><strong>Ci scrivi o ci chiami</strong><span>Scegli la sede e il giorno che preferisci.</span></div></li>
+        <li><div><strong>Visita medica su prenotazione</strong><span>Giovedì 18:45-19:30 o sabato 12:45-13:30, in Via Lemonia 45. Porta patente, tessera sanitaria e 1 fototessera (se non ce l'hai, la facciamo noi).</span></div></li>
+        <li><div><strong>Al resto pensiamo noi</strong><span>Visita medica e procedure sono incluse nei 110€. Si paga in autoscuola prima della visita.</span></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="recensioni" style="background:var(--surface)">
+  <div class="wrap">
+    <div class="rev-head">
+      <div>
+        <h2>Le esperienze dei nostri allievi</h2>
+        <div class="score">
+          <span><b>Santa Viola:</b> 4,7 su 5, 67 recensioni su Google</span>
+          <span><b>Saragozza:</b> 5,0 su 5, 121 recensioni su Google</span>
+        </div>
+      </div>
+      <div class="arrows">
+        <button type="button" id="prev" aria-label="Recensioni precedenti"><svg class="ico"><use href="#i-left"/></svg></button>
+        <button type="button" id="next" aria-label="Recensioni successive"><svg class="ico"><use href="#i-right"/></svg></button>
+      </div>
+    </div>
+
+    <div class="track" id="track" tabindex="0" role="region" aria-label="Recensioni Google">
+      <blockquote>
+        <span class="stars" role="img" aria-label="5 stelle su 5"><svg class="ico fill"><use href="#i-star"/></svg><svg class="ico fill"><use href="#i-star"/></svg><svg class="ico fill"><use href="#i-star"/></svg><svg class="ico fill"><use href="#i-star"/></svg><svg class="ico fill"><use href="#i-star"/></svg></span>
+        <p>"Autoscuola numero 1. Preparazione ottima, sia per la teoria che per la pratica, con personale disponibile a risolvere ogni dubbio e problema. Ottimo punto di riferimento anche per chi ha già la patente e necessita di informazioni e servizi burocratici!"</p>
+        <footer><i>A</i><div><strong>Alessandro</strong><small>Recensione Google</small></div></footer>
+      </blockquote>
+      <blockquote>
+        <span class="stars" role="img" aria-label="5 stelle su 5"><svg class="ico fill"><use href="#i-star"/></svg><svg class="ico fill"><use href="#i-star"/></svg><svg class="ico fill"><use href="#i-star"/></svg><svg class="ico fill"><use href="#i-star"/></svg><svg class="ico fill"><use href="#i-star"/></svg></span>
+        <p>"Ottima scuola, <strong>Maurizio</strong> è un istruttore paziente e molto disponibile, sicuramente una scuola dove ti viene dato più di quello che effettivamente ti aspetti, la consiglio a tutti, per qualsiasi categoria di patente si voglia prendere! Grande Autoscuola S. Viola."</p>
+        <footer><i>F</i><div><strong>Fabio</strong><small>Recensione Google</small></div></footer>
+      </blockquote>
+      <blockquote>
+        <span class="stars" role="img" aria-label="5 stelle su 5"><svg class="ico fill"><use href="#i-star"/></svg><svg class="ico fill"><use href="#i-star"/></svg><svg class="ico fill"><use href="#i-star"/></svg><svg class="ico fill"><use href="#i-star"/></svg><svg class="ico fill"><use href="#i-star"/></svg></span>
+        <p>"Sai quando paghi per un servizio e ti offrono più di quello che ti spetta? <strong>Patente A3</strong> appena presa. Straconsigliatissimi!!! Grande <strong>Maurizio</strong>! Quando il lavoro è svolto con passione, questi sono i risultati. Ancora grazie."</p>
+        <footer><i>P</i><div><strong>Pietro</strong><small>Recensione Google</small></div></footer>
+      </blockquote>
+      <blockquote>
+        <span class="stars" role="img" aria-label="5 stelle su 5"><svg class="ico fill"><use href="#i-star"/></svg><svg class="ico fill"><use href="#i-star"/></svg><svg class="ico fill"><use href="#i-star"/></svg><svg class="ico fill"><use href="#i-star"/></svg><svg class="ico fill"><use href="#i-star"/></svg></span>
+        <p>"Grazie mille a <strong>Francesca</strong> e ad <strong>Andrea</strong>, gentili, professionali e simpatici. Mi sono trovata benissimo, consiglio vivamente."</p>
+        <footer><i>G</i><div><strong>Giorgia</strong><small>Recensione Google</small></div></footer>
+      </blockquote>
+    </div>
+    <p class="rev-note">Nelle recensioni della sede di Via Saragozza viene elogiato anche l'istruttore <strong>Flavio</strong> per calma e chiarezza nelle spiegazioni.</p>
+  </div>
+</section>
+
+<section id="sedi">
+  <div class="wrap">
+    <div class="head">
+      <h2>Due sedi a Bologna</h2>
+      <p class="sub">Scegli quella più comoda: in entrambe trovi segreteria e lezioni di teoria.</p>
+    </div>
+    <div class="sedi">
+      <article class="sede">
+        <h3>Santa Viola</h3>
+        <p class="cap">Via Emilia Ponente, 100, 40133 Bologna</p>
+        <dl class="hours">
+          <dt>Lun-Ven</dt><dd>10:00-12:30, 14:30-19:00</dd>
+          <dt>Sabato</dt><dd>10:00-12:30</dd>
+          <dt>Teoria</dt><dd>Lun e Mer 18:00-19:00<br>Mar e Gio 18:00-19:00<br>Mar e Ven 14:30-15:30</dd>
+        </dl>
+        <div class="actions">
+          <a class="btn btn-main btn-sm" href="tel:051384785"><svg class="ico"><use href="#i-phone"/></svg>051 384785</a>
+          <a class="btn btn-out btn-sm" href="https://www.google.com/maps/search/?api=1&query=Autoscuola+Santa+Viola+Via+Emilia+Ponente+100+Bologna" target="_blank" rel="noopener noreferrer"><svg class="ico"><use href="#i-pin"/></svg>Indicazioni</a>
+        </div>
+      </article>
+      <article class="sede">
+        <h3>Saragozza</h3>
+        <p class="cap">Via Saragozza, 115/B, 40123 Bologna</p>
+        <dl class="hours">
+          <dt>Lun-Ven</dt><dd>10:30-12:30, 14:30-19:00</dd>
+          <dt>Sabato</dt><dd>10:30-12:30</dd>
+          <dt>Teoria</dt><dd>Lun e Mer 18:00-19:00<br>Mar e Ven 18:30-19:30</dd>
+        </dl>
+        <div class="actions">
+          <a class="btn btn-main btn-sm" href="tel:0516446710"><svg class="ico"><use href="#i-phone"/></svg>051 644 6710</a>
+          <a class="btn btn-out btn-sm" href="https://www.google.com/maps/search/?api=1&query=Autoscuola+Santa+Viola+2+Via+Saragozza+115+Bologna" target="_blank" rel="noopener noreferrer"><svg class="ico"><use href="#i-pin"/></svg>Indicazioni</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--surface)">
+  <div class="wrap">
+    <div class="head">
+      <h2>Cosa portare in autoscuola</h2>
+    </div>
+    <div class="docs">
+      <details>
+        <summary>Rinnovo patente</summary>
+        <ul><li>Patente</li><li>Tessera sanitaria</li><li>1 fototessera (se non ce l'hai, la facciamo noi)</li></ul>
+      </details>
+      <details>
+        <summary>Duplicato patente</summary>
+        <ul><li>Carta d'identità e tessera sanitaria</li><li>2 fototessere</li><li>Vecchia patente; se smarrita o rubata, la denuncia ai Carabinieri</li><li>Permesso di soggiorno, se necessario</li></ul>
+        <p class="t">Tempi medi: 2-3 settimane.</p>
+      </details>
+    </div>
+    <p class="sub" style="margin-top:var(--s3)">Per iscriverti a una patente A o B ti diciamo noi cosa portare: <a class="link" href="https://wa.me/39051384785" data-wa="Ciao Autoscuola Santa Viola! Vorrei iscrivermi a una patente: cosa devo portare?" target="_blank" rel="noopener">scrivici su WhatsApp</a> o chiamaci.</p>
+  </div>
+</section>
+
+<section id="contatti">
+  <div class="wrap form-grid">
+    <div>
+      <h2>Scrivici, ti rispondiamo noi.</h2>
+      <p class="sub" style="margin-top:var(--s2)">Compila il modulo e scegli se inviarlo su WhatsApp o per email. Oppure contattaci direttamente.</p>
+      <ul class="direct">
+        <li><a href="https://wa.me/39051384785" data-wa="Ciao Autoscuola Santa Viola! Vi scrivo dal sito web." target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg>WhatsApp</a></li>
+        <li><a href="tel:051384785"><svg class="ico"><use href="#i-phone"/></svg>051 384785, Santa Viola</a></li>
+        <li><a href="tel:0516446710"><svg class="ico"><use href="#i-phone"/></svg>051 644 6710, Saragozza</a></li>
+        <li><a href="mailto:info@autoscuolasantaviola.com"><svg class="ico"><use href="#i-mail"/></svg>info@autoscuolasantaviola.com</a></li>
+      </ul>
+    </div>
+
+    <form id="cf" novalidate>
+      <div class="two">
+        <label for="cf-name">Nome e cognome<input id="cf-name" required autocomplete="name"></label>
+        <label for="cf-phone">Telefono<input id="cf-phone" type="tel" required autocomplete="tel"></label>
+      </div>
+      <p class="err" id="cf-err" role="alert" hidden>Inserisci nome e telefono.</p>
+      <div class="two">
+        <label for="cf-sede">Sede preferita
+          <select id="cf-sede"><option>Santa Viola, Via Emilia Ponente 100</option><option>Saragozza, Via Saragozza 115/B</option></select>
+        </label>
+        <label for="cf-service">Servizio
+          <select id="cf-service">
+            <option>Rinnovo patente</option><option>Duplicato patente</option><option>Patente B</option>
+            <option>Patente moto</option><option>Revisione o patenti professionali</option><option>Recupero punti</option>
+          </select>
+        </label>
+      </div>
+      <label for="cf-msg">Messaggio<textarea id="cf-msg" rows="3"></textarea></label>
+      <div class="two">
+        <button type="button" class="btn btn-main" id="send-wa"><svg class="ico"><use href="#i-wa"/></svg>Scrivici su WhatsApp</button>
+        <button type="button" class="btn btn-out" id="send-mail"><svg class="ico"><use href="#i-mail"/></svg>Invia per email</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="logo" href="#top" style="margin-bottom:var(--s2)"><b>SV</b><span>Autoscuola<small>Santa Viola, Bologna</small></span></a>
+        <p>Patenti, rinnovi e pratiche a Bologna.</p>
+      </div>
+      <div><h2>Servizi</h2><a href="#servizi">Rinnovo patente</a><a href="#servizi">Duplicato</a><a href="#servizi">Patente B</a><a href="#servizi">Patenti moto</a></div>
+      <div><h2>Sedi</h2><a href="#sedi">Via Emilia Ponente, 100<br>051 384785</a><a href="#sedi">Via Saragozza, 115/B<br>051 644 6710</a></div>
+      <div><h2>Contatti</h2><a href="mailto:info@autoscuolasantaviola.com">info@autoscuolasantaviola.com</a><a href="#contatti">Scrivici su WhatsApp</a></div>
+    </div>
+    <p class="legal">Autoscuola Santa Viola, P.IVA 02512171204. Privacy e cookie: [TESTO PRIVACY QUI]. Il sito non usa cookie né strumenti di tracciamento.</p>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-out" href="tel:051384785"><svg class="ico"><use href="#i-phone"/></svg>Chiama</a>
+  <a class="btn btn-out" href="mailto:info@autoscuolasantaviola.com?subject=Richiesta%20dal%20sito"><svg class="ico"><use href="#i-mail"/></svg>Email</a>
+  <a class="btn btn-main" href="https://wa.me/39051384785" data-wa="Ciao Autoscuola Santa Viola! Vorrei informazioni." target="_blank" rel="noopener"><svg class="ico"><use href="#i-wa"/></svg>WhatsApp</a>
+</div>
+
+<script>
+// MOCKUP: numero WhatsApp segnaposto (fisso di Santa Viola; il sito attuale usa solo Messenger).
+// Sostituire con il numero WhatsApp Business reale prima di andare online, qui e negli href.
+const WA_NUMBER = "39051384785";
+const EMAIL = "info@autoscuolasantaviola.com";
+const waUrl = t => "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(t);
+
+document.querySelectorAll("[data-wa]").forEach(a => { a.href = waUrl(a.dataset.wa); });
+
+const track = document.getElementById("track");
+const step = () => track.firstElementChild.getBoundingClientRect().width + 24;
+document.getElementById("prev").addEventListener("click", () => track.scrollBy({ left: -step(), behavior: "smooth" }));
+document.getElementById("next").addEventListener("click", () => track.scrollBy({ left: step(), behavior: "smooth" }));
+
+function readForm() {
+  const v = id => document.getElementById(id).value.trim();
+  const d = { name: v("cf-name"), phone: v("cf-phone"), sede: v("cf-sede"), service: v("cf-service"), msg: v("cf-msg") };
+  const bad = !d.name || !d.phone;
+  document.getElementById("cf-err").hidden = !bad;
+  document.getElementById("cf-name").setAttribute("aria-invalid", String(!d.name));
+  document.getElementById("cf-phone").setAttribute("aria-invalid", String(!d.phone));
+  if (bad) document.getElementById(d.name ? "cf-phone" : "cf-name").focus();
+  return bad ? null : d;
+}
+
+document.getElementById("send-wa").addEventListener("click", () => {
+  const d = readForm(); if (!d) return;
+  window.open(waUrl(`Ciao Autoscuola Santa Viola! Sono ${d.name} (tel. ${d.phone}).\nSede: ${d.sede}\nServizio: ${d.service}` + (d.msg ? `\nMessaggio: ${d.msg}` : "")), "_blank", "noopener");
+});
+
+document.getElementById("send-mail").addEventListener("click", () => {
+  const d = readForm(); if (!d) return;
+  const body = `Buongiorno,\n\nvi contatto dal sito.\n- Nome: ${d.name}\n- Telefono: ${d.phone}\n- Sede: ${d.sede}\n- Servizio: ${d.service}\n\n${d.msg || "Vorrei essere ricontattato."}\n\nGrazie, ${d.name}`;
+  location.href = `mailto:${EMAIL}?subject=${encodeURIComponent("Richiesta dal sito: " + d.service)}&body=${encodeURIComponent(body)}`;
+});
+</script>
+</body>
+</html>
