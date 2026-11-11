@@ -10,7 +10,7 @@
 <meta property="og:locale" content="it_IT">
 <meta property="og:title" content="Autoscuola Santa Viola Bologna">
 <meta property="og:description" content="Patenti auto e moto, rinnovi, duplicati e pratiche in due sedi a Bologna. Aperti anche il sabato mattina.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%236a2fb0'/%3E%3Ctext x='32' y='42' font-family='Arial' font-size='28' font-weight='700' text-anchor='middle' fill='%23f6f1fb'%3ESV%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="img/icon.png">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
 {"@type":"LocalBusiness","name":"Autoscuola Santa Viola","telephone":"+39051384785","email":"info@autoscuolasantaviola.com","address":{"@type":"PostalAddress","streetAddress":"Via Emilia Ponente 100","postalCode":"40133","addressLocality":"Bologna","addressCountry":"IT"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"12:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"14:30","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"12:30"}]},
@@ -21,15 +21,15 @@
 :root{
   color-scheme:light;
   /* colori: carta, superficie, inchiostro, un solo accento (prugna) */
-  --paper:oklch(0.968 0.008 305);
-  --surface:oklch(0.992 0.004 305);
-  --ink:oklch(0.22 0.025 305);
-  --muted:oklch(0.46 0.025 305);
-  --line:oklch(0.89 0.012 305);
-  --accent:oklch(0.45 0.19 303);
-  --accent-hover:oklch(0.38 0.18 303);
-  --accent-ink:oklch(0.985 0.01 305);
-  --accent-soft:oklch(0.93 0.035 305);
+  --paper:oklch(0.97 0.008 350);
+  --surface:oklch(0.993 0.004 350);
+  --ink:oklch(0.22 0.025 350);
+  --muted:oklch(0.46 0.025 350);
+  --line:oklch(0.89 0.012 350);
+  --accent:oklch(0.5 0.2 357);
+  --accent-hover:oklch(0.42 0.19 357);
+  --accent-ink:oklch(0.985 0.01 350);
+  --accent-soft:oklch(0.94 0.035 355);
   --err:oklch(0.5 0.18 27);
   /* font: stack di sistema (woff2 self-hosted non presenti nella cartella) */
   --font:"Segoe UI Variable Text","Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
@@ -77,10 +77,8 @@ section{padding-block:var(--s7)}
 .ann a{color:var(--accent-soft);font-weight:700;margin-left:var(--s1);text-underline-offset:3px}
 header.top{position:sticky;top:0;z-index:30;background:var(--surface);border-bottom:1px solid var(--line)}
 .bar{display:flex;align-items:center;justify-content:space-between;gap:var(--s3);min-height:76px}
-.logo{display:flex;align-items:center;gap:12px;text-decoration:none;line-height:1.05}
-.logo b{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-size:var(--t0);font-weight:800}
-.logo span{font:800 1.1875rem/1.05 var(--font-display);letter-spacing:-.01em}
-.logo small{display:block;margin-top:3px;font:700 .6875rem/1 var(--font);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo img{display:block;height:56px;width:auto}
 nav{display:flex;gap:var(--s4);font-weight:600}
 nav a{text-decoration:none;display:inline-flex;align-items:center;min-height:44px}nav a:hover{color:var(--accent)}
 .bar-cta{display:flex;gap:var(--s1)}
@@ -91,7 +89,9 @@ nav a{text-decoration:none;display:inline-flex;align-items:center;min-height:44p
 .hero h1{margin-bottom:var(--s3)}
 .hero .sub{margin-bottom:var(--s4)}
 .cta-row{display:flex;flex-wrap:wrap;gap:var(--s2);align-items:center}
-.slot{display:grid;place-items:center;text-align:center;border:2px dashed var(--line);border-radius:var(--r);background:var(--surface);color:var(--muted);font-size:.9375rem;padding:var(--s3);aspect-ratio:5/4}
+.photo{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;border-radius:var(--r);background:var(--accent-soft)}
+.wide{margin:0 0 var(--s4)}
+.wide .photo{aspect-ratio:21/9;object-position:center 22%}
 .sedi-call{display:grid;gap:var(--s1);margin-top:var(--s2)}
 .call{display:flex;align-items:center;justify-content:space-between;gap:var(--s2);min-height:64px;padding:var(--s1) var(--s3);border:1px solid var(--line);background:var(--surface);border-radius:var(--r);text-decoration:none;transition:border-color .2s var(--ease)}
 .call:hover{border-color:var(--accent)}
@@ -224,9 +224,8 @@ footer.site{border-top:1px solid var(--line);padding-block:var(--s6);color:var(-
 
 <header class="top">
   <div class="wrap bar">
-    <a class="logo" href="#top" aria-label="Autoscuola Santa Viola, inizio pagina">
-      <b>SV</b>
-      <span>Autoscuola<small>Santa Viola, Bologna</small></span>
+    <a class="logo" href="#top" aria-label="Autoscuola S. Viola, inizio pagina">
+      <img src="img/logo-240.webp" width="69" height="56" alt="Autoscuola S. Viola, patente B auto e patente A moto">
     </a>
     <nav aria-label="Principale">
       <a href="#servizi">Servizi</a>
@@ -256,7 +255,7 @@ footer.site{border-top:1px solid var(--line);padding-block:var(--s6);color:var(-
       </div>
     </div>
     <div>
-      <div class="slot" role="img" aria-label="Spazio per una foto reale del team o della sede">[FOTO TEAM O SEDE QUI]</div>
+      <img class="photo" src="img/team-1280.webp" srcset="img/team-640.webp 640w, img/team-1280.webp 1280w" sizes="(max-width:1000px) 100vw, 520px" width="1280" height="720" fetchpriority="high" alt="Il team di Autoscuola Santa Viola in posa davanti alle auto e alle moto della scuola">
       <div class="sedi-call">
         <a class="call" href="tel:051384785">
           <span><strong>Santa Viola</strong><small>Via Emilia Ponente, 100</small></span>
@@ -348,6 +347,10 @@ footer.site{border-top:1px solid var(--line);padding-block:var(--s6);color:var(-
         <button type="button" id="next" aria-label="Recensioni successive"><svg class="ico"><use href="#i-right"/></svg></button>
       </div>
     </div>
+
+    <figure class="wide">
+      <img class="photo" loading="lazy" src="img/allievi-1280.webp" srcset="img/allievi-640.webp 640w, img/allievi-1280.webp 1280w" sizes="(max-width:1160px) 100vw, 1112px" width="1280" height="606" alt="Tre allievi e un istruttore mostrano le patenti appena prese">
+    </figure>
 
     <div class="track" id="track" tabindex="0" role="region" aria-label="Recensioni Google">
       <blockquote>
@@ -477,7 +480,7 @@ footer.site{border-top:1px solid var(--line);padding-block:var(--s6);color:var(-
   <div class="wrap">
     <div class="foot">
       <div>
-        <a class="logo" href="#top" style="margin-bottom:var(--s2)"><b>SV</b><span>Autoscuola<small>Santa Viola, Bologna</small></span></a>
+        <a class="logo" href="#top" style="margin-bottom:var(--s2)" aria-label="Autoscuola S. Viola, inizio pagina"><img src="img/logo-240.webp" width="69" height="56" alt="Autoscuola S. Viola" loading="lazy"></a>
         <p>Patenti, rinnovi e pratiche a Bologna.</p>
       </div>
       <div><h2>Servizi</h2><a href="#servizi">Rinnovo patente</a><a href="#servizi">Duplicato</a><a href="#servizi">Patente B</a><a href="#servizi">Patenti moto</a></div>
